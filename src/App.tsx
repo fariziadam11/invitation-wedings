@@ -41,7 +41,7 @@ function App() {
       
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-16 sm:space-y-24">
         <EventDetails event={eventData} />
-        <CountdownTimer targetDate={eventData.date} onComplete={triggerConfetti} />
+        <CountdownTimer targetDate={eventData.date} />
         <MapEmbed location={eventData.location} />
         <PhotoGallery images={eventData.galleryImages} />
         <Guestbook messages={eventData.guestbookMessages} />
